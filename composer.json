@@ -1,0 +1,27 @@
+{
+    "name": "llminvoice/llminvoice",
+    "description": "AI-powered commercial management platform",
+    "type": "project",
+    "require": {
+        "php": "^8.3",
+        "dompdf/dompdf": "^3.0",
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php",
+            "src/Helpers/html.php",
+            "src/Helpers/date.php",
+            "src/Helpers/money.php",
+            "src/Helpers/text.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}

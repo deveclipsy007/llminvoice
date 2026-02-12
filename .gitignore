@@ -1,0 +1,24 @@
+# Environment
+.env
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Storage
+/storage/logs/*
+/storage/cache/*
+/storage/uploads/*
+!storage/logs/.gitkeep
+!storage/cache/.gitkeep
+!storage/uploads/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

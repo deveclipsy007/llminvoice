@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "project-bootstrap-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "project-bootstrap" },
+    "inputs": {
+      "type": "object",
+      "required": ["target_environment", "selected_bundles", "execution_mode"],
+      "properties": {
+        "target_environment": { "enum": ["local", "staging", "production"] },
+        "selected_bundles": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "env_values": { "type": "object" },
+        "execution_mode": { "enum": ["dry_run", "apply"] }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

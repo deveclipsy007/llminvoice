@@ -1,0 +1,14 @@
+{
+  "skill": "proposal-versioning",
+  "outputs": [
+    "src/Controllers/Admin/ProposalController.php",
+    "src/Models/ProposalVersion.php",
+    "src/Services/ProposalService.php"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "version_number_increments",
+    "current_version_id_consistent",
+    "versions_endpoint_sorted"
+  ]
+}

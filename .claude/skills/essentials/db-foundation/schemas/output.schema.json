@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "db-foundation-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": {
+      "const": "db-foundation"
+    },
+    "inputs": {
+      "type": "object",
+      "required": ["change_name", "target_tables", "migration_sql"],
+      "properties": {
+        "change_name": { "type": "string", "minLength": 3 },
+        "target_tables": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "migration_sql": { "type": "string", "minLength": 10 },
+        "rollback_sql": { "type": "string" }
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "risk_label": {
+      "enum": ["safe", "caution", "dangerous"]
+    }
+  }
+}

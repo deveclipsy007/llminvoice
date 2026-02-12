@@ -1,0 +1,7 @@
+{
+  "premises": ["Escopo validado"],
+  "deadlines": ["Entrega em 6 semanas"],
+  "risks": ["Dependencia de API externa"],
+  "optional_items": ["Treinamento"],
+  "change_summary": "Ajuste de prazo e escopo"
+}

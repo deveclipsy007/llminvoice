@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "bugfix-playbook-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "bugfix-playbook" },
+    "inputs": {
+      "type": "object",
+      "required": ["bug_report", "repro_steps", "affected_files", "expected_behavior"],
+      "properties": {
+        "bug_report": { "type": "string" },
+        "repro_steps": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "affected_files": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "expected_behavior": { "type": "string" }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

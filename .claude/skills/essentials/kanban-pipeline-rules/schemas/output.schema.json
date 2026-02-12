@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "kanban-pipeline-rules-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "kanban-pipeline-rules" },
+    "inputs": {
+      "type": "object",
+      "required": ["from_column", "to_column", "rule_type"],
+      "properties": {
+        "from_column": { "type": "string" },
+        "to_column": { "type": "string" },
+        "rule_type": { "type": "string" },
+        "rule_config": { "type": ["object", "null"] }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

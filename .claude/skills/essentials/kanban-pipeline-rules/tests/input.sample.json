@@ -1,0 +1,9 @@
+{
+  "skill": "kanban-pipeline-rules",
+  "inputs": {
+    "from_column": "briefing_received",
+    "to_column": "ai_analyzed",
+    "rule_type": "ai_completed",
+    "rule_config": null
+  }
+}

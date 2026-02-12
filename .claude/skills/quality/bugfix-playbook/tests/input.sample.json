@@ -1,0 +1,16 @@
+{
+  "skill": "bugfix-playbook",
+  "inputs": {
+    "bug_report": "Erro 500 ao salvar proposta sem fases",
+    "repro_steps": [
+      "Acessar cliente",
+      "Criar proposta sem fases",
+      "Salvar"
+    ],
+    "affected_files": [
+      "src/Controllers/Admin/ProposalController.php",
+      "src/Services/ProposalService.php"
+    ],
+    "expected_behavior": "Salvar proposta com validacao amigavel sem erro 500"
+  }
+}

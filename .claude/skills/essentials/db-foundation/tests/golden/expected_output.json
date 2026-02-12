@@ -1,0 +1,12 @@
+{
+  "skill": "db-foundation",
+  "outputs": [
+    "database/migrations/009_add_public_form_index.sql"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "migration_name_incremental",
+    "sql_not_empty",
+    "rollback_present"
+  ]
+}

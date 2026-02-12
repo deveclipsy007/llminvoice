@@ -1,0 +1,12 @@
+{
+  "skill": "admin-reports-ui",
+  "outputs": [
+    "templates/pages/admin/reports.php"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "filters_still_work",
+    "csv_export_link_preserved",
+    "visual_parity_with_client_style"
+  ]
+}

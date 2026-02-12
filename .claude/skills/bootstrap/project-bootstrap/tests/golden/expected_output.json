@@ -1,0 +1,15 @@
+{
+  "skill": "project-bootstrap",
+  "outputs": [
+    "execution_plan",
+    "preflight_checklist",
+    "postflight_report",
+    "coverage_report"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "ordered_steps",
+    "coverage_checked",
+    "all_selected_skills_validated"
+  ]
+}

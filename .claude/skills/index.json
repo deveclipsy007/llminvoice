@@ -1,0 +1,92 @@
+{
+  "project": "llminvoice",
+  "version": "1.0.0",
+  "bundles": [
+    "essentials",
+    "security",
+    "intelligence",
+    "quality",
+    "frontend",
+    "bootstrap"
+  ],
+  "skills": [
+    {
+      "name": "db-foundation",
+      "bundle": "essentials",
+      "path": "skills/essentials/db-foundation",
+      "risk": "caution"
+    },
+    {
+      "name": "public-form-intake",
+      "bundle": "essentials",
+      "path": "skills/essentials/public-form-intake",
+      "risk": "caution"
+    },
+    {
+      "name": "form-builder-management",
+      "bundle": "essentials",
+      "path": "skills/essentials/form-builder-management",
+      "risk": "caution"
+    },
+    {
+      "name": "proposal-versioning",
+      "bundle": "essentials",
+      "path": "skills/essentials/proposal-versioning",
+      "risk": "caution"
+    },
+    {
+      "name": "email-tracking",
+      "bundle": "essentials",
+      "path": "skills/essentials/email-tracking",
+      "risk": "caution"
+    },
+    {
+      "name": "kanban-pipeline-rules",
+      "bundle": "essentials",
+      "path": "skills/essentials/kanban-pipeline-rules",
+      "risk": "caution"
+    },
+    {
+      "name": "auth-rbac-hardening",
+      "bundle": "security",
+      "path": "skills/security/auth-rbac-hardening",
+      "risk": "dangerous"
+    },
+    {
+      "name": "ai-analysis-pipeline",
+      "bundle": "intelligence",
+      "path": "skills/intelligence/ai-analysis-pipeline",
+      "risk": "caution"
+    },
+    {
+      "name": "bugfix-playbook",
+      "bundle": "quality",
+      "path": "skills/quality/bugfix-playbook",
+      "risk": "safe"
+    },
+    {
+      "name": "frontend-design-system",
+      "bundle": "frontend",
+      "path": "skills/frontend/frontend-design-system",
+      "risk": "caution"
+    },
+    {
+      "name": "admin-reports-ui",
+      "bundle": "frontend",
+      "path": "skills/frontend/admin-reports-ui",
+      "risk": "caution"
+    },
+    {
+      "name": "admin-chat-ui-flow",
+      "bundle": "frontend",
+      "path": "skills/frontend/admin-chat-ui-flow",
+      "risk": "caution"
+    },
+    {
+      "name": "project-bootstrap",
+      "bundle": "bootstrap",
+      "path": "skills/bootstrap/project-bootstrap",
+      "risk": "caution"
+    }
+  ]
+}

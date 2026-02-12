@@ -1,0 +1,76 @@
+{
+  "project": "llminvoice",
+  "last_updated": "2026-02-11",
+  "modules": [
+    {
+      "module": "database-foundation",
+      "status": "covered",
+      "skill": "db-foundation"
+    },
+    {
+      "module": "public-form-intake",
+      "status": "covered",
+      "skill": "public-form-intake"
+    },
+    {
+      "module": "proposal-versioning",
+      "status": "covered",
+      "skill": "proposal-versioning"
+    },
+    {
+      "module": "email-tracking",
+      "status": "covered",
+      "skill": "email-tracking"
+    },
+    {
+      "module": "kanban-transition-rules",
+      "status": "covered",
+      "skill": "kanban-pipeline-rules"
+    },
+    {
+      "module": "auth-rbac",
+      "status": "covered",
+      "skill": "auth-rbac-hardening"
+    },
+    {
+      "module": "ai-analysis",
+      "status": "covered",
+      "skill": "ai-analysis-pipeline"
+    },
+    {
+      "module": "bug-fix-process",
+      "status": "covered",
+      "skill": "bugfix-playbook"
+    },
+    {
+      "module": "project-orchestration",
+      "status": "covered",
+      "skill": "project-bootstrap"
+    },
+    {
+      "module": "admin-reports",
+      "status": "covered",
+      "skill": "admin-reports-ui"
+    },
+    {
+      "module": "admin-chat-ui-flow",
+      "status": "covered",
+      "skill": "admin-chat-ui-flow"
+    },
+    {
+      "module": "frontend-design-system",
+      "status": "covered",
+      "skill": "frontend-design-system"
+    },
+    {
+      "module": "admin-visual-parity-with-client",
+      "status": "covered",
+      "skill": "frontend-design-system"
+    },
+    {
+      "module": "deployment-devops",
+      "status": "missing",
+      "skill": null
+    }
+  ]
+}

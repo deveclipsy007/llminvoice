@@ -1,0 +1,9 @@
+{
+  "skill": "db-foundation",
+  "inputs": {
+    "change_name": "add_public_form_index",
+    "target_tables": ["public_form_responses"],
+    "migration_sql": "CREATE INDEX idx_pfr_status_submitted ON public_form_responses(status, submitted_at);",
+    "rollback_sql": "DROP INDEX idx_pfr_status_submitted ON public_form_responses;"
+  }
+}

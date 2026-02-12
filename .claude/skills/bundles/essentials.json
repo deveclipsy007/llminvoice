@@ -1,0 +1,11 @@
+{
+  "bundle": "essentials",
+  "description": "Capacidades base para iniciar e operar o projeto",
+  "skills": [
+    "db-foundation",
+    "public-form-intake",
+    "proposal-versioning",
+    "email-tracking",
+    "kanban-pipeline-rules"
+  ]
+}

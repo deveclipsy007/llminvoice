@@ -1,0 +1,21 @@
+{
+  "skill": "ai-analysis-pipeline",
+  "inputs": {
+    "provider": "claude",
+    "model_policy": {
+      "max_tokens": 8000,
+      "temperature": 0.3,
+      "timeout_seconds": 120
+    },
+    "output_contract": [
+      "diagnosis",
+      "recommendations",
+      "risks",
+      "executive_summary"
+    ],
+    "failure_policy": {
+      "retry_attempts": 2,
+      "fallback_to": "mark_failed"
+    }
+  }
+}

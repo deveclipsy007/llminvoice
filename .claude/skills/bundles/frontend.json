@@ -1,0 +1,9 @@
+{
+  "bundle": "frontend",
+  "description": "Sistema visual e consistencia de experiencia entre area cliente e admin",
+  "skills": [
+    "frontend-design-system",
+    "admin-reports-ui",
+    "admin-chat-ui-flow"
+  ]
+}

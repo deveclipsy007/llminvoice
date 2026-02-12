@@ -1,0 +1,15 @@
+{
+  "skill": "auth-rbac-hardening",
+  "inputs": {
+    "routes_to_protect": ["POST /api/clients/{id}/archive", "POST /api/proposals/{id}/approve"],
+    "roles_matrix": {
+      "admin": ["proposal.approve"],
+      "user": ["proposal.create"],
+      "client": ["proposal.view_own"]
+    },
+    "session_policy": {
+      "idle_timeout_minutes": 30,
+      "rotate_session_on_login": true
+    }
+  }
+}

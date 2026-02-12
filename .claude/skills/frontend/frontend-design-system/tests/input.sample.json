@@ -1,0 +1,23 @@
+{
+  "skill": "frontend-design-system",
+  "inputs": {
+    "source_style": [
+      "templates/layouts/client.php",
+      "templates/pages/client/home.php"
+    ],
+    "target_scope": [
+      "templates/layouts/admin.php",
+      "templates/partials/sidebar.php",
+      "templates/partials/topbar.php"
+    ],
+    "component_tokens": {
+      "palette": "green_glass",
+      "depth": "soft_gradient",
+      "accent": "emerald"
+    },
+    "mobile_requirements": [
+      "sidebar_mobile_nav",
+      "touch_targets_min_44px"
+    ]
+  }
+}

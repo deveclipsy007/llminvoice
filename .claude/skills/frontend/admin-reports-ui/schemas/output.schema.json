@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "admin-reports-ui-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "admin-reports-ui" },
+    "inputs": {
+      "type": "object",
+      "required": ["report_types", "filter_fields", "visual_tokens"],
+      "properties": {
+        "report_types": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "filter_fields": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "visual_tokens": { "type": "object" }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

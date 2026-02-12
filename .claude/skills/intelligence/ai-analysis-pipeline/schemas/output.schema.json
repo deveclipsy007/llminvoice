@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ai-analysis-pipeline-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "ai-analysis-pipeline" },
+    "inputs": {
+      "type": "object",
+      "required": ["provider", "model_policy", "output_contract", "failure_policy"],
+      "properties": {
+        "provider": { "enum": ["claude", "openai", "groq"] },
+        "model_policy": { "type": "object" },
+        "output_contract": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "failure_policy": { "type": "object" }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

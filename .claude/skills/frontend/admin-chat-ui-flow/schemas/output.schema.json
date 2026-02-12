@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "admin-chat-ui-flow-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "admin-chat-ui-flow" },
+    "inputs": {
+      "type": "object",
+      "required": ["chat_sections", "interaction_states", "visual_tokens"],
+      "properties": {
+        "chat_sections": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "interaction_states": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "visual_tokens": { "type": "object" }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "from_column_id": 2,
+  "to_column_id": 3,
+  "rule_type": "ai_completed",
+  "rule_config": null,
+  "error_message_pt": "A analise de IA precisa estar concluida."
+}

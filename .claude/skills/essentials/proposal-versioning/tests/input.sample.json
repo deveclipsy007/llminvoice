@@ -1,0 +1,10 @@
+{
+  "skill": "proposal-versioning",
+  "inputs": {
+    "proposal_id": 123,
+    "new_version_payload": {
+      "change_summary": "Nova fase de rollout"
+    },
+    "approval_policy": "admin_only"
+  }
+}

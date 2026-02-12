@@ -1,0 +1,20 @@
+{
+  "target_environment": "local",
+  "execution_mode": "dry_run",
+  "selected_bundles": [
+    "essentials",
+    "security",
+    "intelligence",
+    "quality"
+  ],
+  "steps": [
+    "db-foundation",
+    "auth-rbac-hardening",
+    "public-form-intake",
+    "kanban-pipeline-rules",
+    "proposal-versioning",
+    "email-tracking",
+    "ai-analysis-pipeline",
+    "bugfix-playbook"
+  ]
+}

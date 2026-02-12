@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "frontend-design-system-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "frontend-design-system" },
+    "inputs": {
+      "type": "object",
+      "required": ["source_style", "target_scope", "component_tokens"],
+      "properties": {
+        "source_style": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "target_scope": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "component_tokens": { "type": "object" },
+        "mobile_requirements": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "skill": "auth-rbac-hardening",
+  "outputs": [
+    "config/routes.php",
+    "config/permissions.php",
+    "src/Middleware/AuthMiddleware.php",
+    "src/Middleware/RoleMiddleware.php"
+  ],
+  "risk_label": "dangerous",
+  "checks": [
+    "all_admin_write_routes_have_auth_role_csrf",
+    "no_empty_role_bypass",
+    "role_matrix_has_admin_user_client"
+  ]
+}

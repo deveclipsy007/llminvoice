@@ -1,0 +1,11 @@
+{
+  "skill": "email-tracking",
+  "inputs": {
+    "tracking_strategy": "pixel_and_redirect",
+    "status_mapping": {
+      "opened": "opened",
+      "clicked": "clicked"
+    },
+    "privacy_policy": "consent_required"
+  }
+}

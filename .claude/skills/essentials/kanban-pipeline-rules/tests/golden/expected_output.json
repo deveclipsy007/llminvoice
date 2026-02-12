@@ -1,0 +1,13 @@
+{
+  "skill": "kanban-pipeline-rules",
+  "outputs": [
+    "src/Services/PipelineService.php",
+    "src/Controllers/Admin/KanbanController.php"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "invalid_transition_rejected",
+    "position_in_column_consistent",
+    "localized_error_messages"
+  ]
+}

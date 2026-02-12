@@ -1,0 +1,12 @@
+{
+  "skill": "admin-chat-ui-flow",
+  "outputs": [
+    "templates/pages/admin/chat.php"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "thread_selection_works",
+    "send_message_flow_works",
+    "mobile_layout_usable"
+  ]
+}

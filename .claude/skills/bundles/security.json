@@ -1,0 +1,7 @@
+{
+  "bundle": "security",
+  "description": "Autenticacao, autorizacao e governanca",
+  "skills": [
+    "auth-rbac-hardening"
+  ]
+}

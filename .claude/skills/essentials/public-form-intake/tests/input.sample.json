@@ -1,0 +1,9 @@
+{
+  "skill": "public-form-intake",
+  "inputs": {
+    "form_fields": ["visitor_name", "responses", "terms_accepted"],
+    "validation_rules": ["visitor_name.required", "responses.array", "terms_accepted.accepted"],
+    "analysis_mode": "ai",
+    "notification_channels": ["telegram"]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "auth-rbac-hardening-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "auth-rbac-hardening" },
+    "inputs": {
+      "type": "object",
+      "required": ["routes_to_protect", "roles_matrix"],
+      "properties": {
+        "routes_to_protect": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "roles_matrix": { "type": "object" },
+        "session_policy": { "type": "object" }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

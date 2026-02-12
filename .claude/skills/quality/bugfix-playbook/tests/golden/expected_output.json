@@ -1,0 +1,14 @@
+{
+  "skill": "bugfix-playbook",
+  "outputs": [
+    "patch_minimo",
+    "teste_regressao",
+    "rca"
+  ],
+  "risk_label": "safe",
+  "checks": [
+    "reproduz_antes",
+    "passa_depois",
+    "teste_de_regressao_presente"
+  ]
+}

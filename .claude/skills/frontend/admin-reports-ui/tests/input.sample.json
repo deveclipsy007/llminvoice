@@ -1,0 +1,11 @@
+{
+  "skill": "admin-reports-ui",
+  "inputs": {
+    "report_types": ["conversion", "revenue", "ai", "email"],
+    "filter_fields": ["type", "date_from", "date_to"],
+    "visual_tokens": {
+      "palette": "green_glass",
+      "surface": "gradient_soft"
+    }
+  }
+}

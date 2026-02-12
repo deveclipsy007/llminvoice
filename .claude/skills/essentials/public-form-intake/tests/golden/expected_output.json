@@ -1,0 +1,13 @@
+{
+  "skill": "public-form-intake",
+  "outputs": [
+    "src/Controllers/Client/PublicFormController.php",
+    "config/routes.php"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "validation_422_json",
+    "fallback_analysis_present",
+    "status_pending_on_create"
+  ]
+}

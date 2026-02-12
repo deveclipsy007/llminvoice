@@ -1,0 +1,14 @@
+{
+  "skill": "email-tracking",
+  "outputs": [
+    "src/Controllers/Admin/EmailController.php",
+    "src/Services/EmailService.php",
+    "config/routes.php"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "open_endpoint_updates_opened_at",
+    "click_endpoint_updates_clicked_at",
+    "tracking_id_unique"
+  ]
+}

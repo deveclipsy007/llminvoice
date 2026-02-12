@@ -1,0 +1,7 @@
+{
+  "bundle": "quality",
+  "description": "Confiabilidade, reproducao de correcoes e reducao de regressao",
+  "skills": [
+    "bugfix-playbook"
+  ]
+}

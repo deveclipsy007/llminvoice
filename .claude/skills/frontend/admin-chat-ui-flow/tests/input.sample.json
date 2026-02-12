@@ -1,0 +1,11 @@
+{
+  "skill": "admin-chat-ui-flow",
+  "inputs": {
+    "chat_sections": ["threads", "meta", "messages", "composer"],
+    "interaction_states": ["loading", "empty", "sending", "error"],
+    "visual_tokens": {
+      "palette": "green_glass",
+      "focus": "emerald_glow"
+    }
+  }
+}

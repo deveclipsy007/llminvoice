@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "email-tracking-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "email-tracking" },
+    "inputs": {
+      "type": "object",
+      "required": ["tracking_strategy", "status_mapping"],
+      "properties": {
+        "tracking_strategy": { "type": "string" },
+        "status_mapping": { "type": "object" },
+        "privacy_policy": { "type": "string" }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "skill": "frontend-design-system",
+  "outputs": [
+    "templates/layouts/admin.php",
+    "templates/partials/sidebar.php",
+    "templates/partials/topbar.php"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "admin_uses_client_palette",
+    "hover_focus_states_consistent",
+    "mobile_nav_intact"
+  ]
+}

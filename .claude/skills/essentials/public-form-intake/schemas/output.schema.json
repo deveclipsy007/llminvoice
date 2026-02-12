@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public-form-intake-output",
+  "type": "object",
+  "required": ["skill", "inputs", "outputs", "risk_label"],
+  "properties": {
+    "skill": { "const": "public-form-intake" },
+    "inputs": {
+      "type": "object",
+      "required": ["form_fields", "validation_rules", "analysis_mode"],
+      "properties": {
+        "form_fields": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "validation_rules": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "analysis_mode": { "enum": ["ai", "fallback"] },
+        "notification_channels": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "outputs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "risk_label": { "enum": ["safe", "caution", "dangerous"] }
+  }
+}

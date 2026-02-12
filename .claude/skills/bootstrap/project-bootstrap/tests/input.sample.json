@@ -1,0 +1,14 @@
+{
+  "skill": "project-bootstrap",
+  "inputs": {
+    "target_environment": "local",
+    "selected_bundles": ["essentials", "security", "intelligence", "quality"],
+    "execution_mode": "dry_run",
+    "env_values": {
+      "DB_CONNECTION": "mysql",
+      "DB_HOST": "127.0.0.1",
+      "DB_DATABASE": "llminvoice",
+      "AI_PROVIDER": "claude"
+    }
+  }
+}

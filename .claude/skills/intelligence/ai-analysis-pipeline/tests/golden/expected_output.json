@@ -1,0 +1,14 @@
+{
+  "skill": "ai-analysis-pipeline",
+  "outputs": [
+    "config/ai.php",
+    "src/Services/AiService.php"
+  ],
+  "risk_label": "caution",
+  "checks": [
+    "provider_call_has_timeout",
+    "error_path_marks_failed",
+    "status_sync_with_client",
+    "usage_telemetry_recorded"
+  ]
+}

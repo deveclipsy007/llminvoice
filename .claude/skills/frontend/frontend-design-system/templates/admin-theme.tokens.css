@@ -1,0 +1,9 @@
+:root {
+  --admin-bg: #081708;
+  --admin-surface: rgba(2, 10, 2, 0.78);
+  --admin-surface-soft: rgba(6, 24, 8, 0.72);
+  --admin-border: rgba(68, 146, 93, 0.28);
+  --admin-text: #e6f7e7;
+  --admin-muted: #9fbea6;
+  --admin-accent: #7ab27f;
+}

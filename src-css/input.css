@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-dark text-white font-sans antialiased;
+    }
+
+    ::selection {
+        @apply bg-lime text-black;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-2;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-dark;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-white/10 rounded-full;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-white/20;
+    }
+}
+
+@layer components {
+    /* Glassmorphism Panel */
+    .glass-panel {
+        background: rgba(18, 18, 18, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        @apply rounded-glass;
+    }
+
+    .glass-panel-sm {
+        background: rgba(18, 18, 18, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        @apply rounded-2xl;
+    }
+
+    /* Edge Glow Effect */
+    .edge-glow {
+        @apply border-t border-l border-white/10 border-b border-r border-black/50;
+    }
+
+    /* CTA Button - Lime */
+    .btn-lime {
+        @apply bg-lime text-black font-bold px-6 py-3 rounded-xl
+               hover:brightness-110 active:scale-[0.98]
+               transition-all duration-200 ease-out
+               shadow-lg shadow-lime/20;
+    }
+
+    .btn-lime-sm {
+        @apply bg-lime text-black font-semibold px-4 py-2 rounded-lg text-sm
+               hover:brightness-110 active:scale-[0.98]
+               transition-all duration-200 ease-out;
+    }
+
+    /* Secondary Button */
+    .btn-secondary {
+        @apply bg-white/5 text-white font-medium px-6 py-3 rounded-xl
+               border border-white/10
+               hover:bg-white/10 active:scale-[0.98]
+               transition-all duration-200 ease-out;
+    }
+
+    .btn-secondary-sm {
+        @apply bg-white/5 text-white font-medium px-4 py-2 rounded-lg text-sm
+               border border-white/10
+               hover:bg-white/10 active:scale-[0.98]
+               transition-all duration-200 ease-out;
+    }
+
+    /* Danger Button */
+    .btn-danger {
+        @apply bg-danger/10 text-danger font-medium px-6 py-3 rounded-xl
+               border border-danger/20
+               hover:bg-danger/20 active:scale-[0.98]
+               transition-all duration-200 ease-out;
+    }
+
+    /* Dark Input Fields */
+    .input-dark {
+        @apply w-full bg-dark-surface border border-white/10 text-white
+               rounded-xl px-4 py-3
+               placeholder:text-text-secondary
+               focus:border-lime focus:ring-1 focus:ring-lime/30 focus:outline-none
+               transition-colors duration-200;
+    }
+
+    .input-dark-sm {
+        @apply w-full bg-dark-surface border border-white/10 text-white
+               rounded-lg px-3 py-2 text-sm
+               placeholder:text-text-secondary
+               focus:border-lime focus:ring-1 focus:ring-lime/30 focus:outline-none
+               transition-colors duration-200;
+    }
+
+    /* Select Dark */
+    .select-dark {
+        @apply w-full bg-dark-surface border border-white/10 text-white
+               rounded-xl px-4 py-3 appearance-none
+               focus:border-lime focus:ring-1 focus:ring-lime/30 focus:outline-none
+               transition-colors duration-200;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23888888' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 40px;
+    }
+
+    /* AI Orb Animation */
+    .ai-orb {
+        @apply relative w-16 h-16 rounded-full;
+        background: conic-gradient(from 0deg, #C8FF00, #00FF88, #C8FF00);
+        filter: blur(1px);
+        animation: orbSpin 3s linear infinite;
+    }
+
+    .ai-orb::after {
+        content: '';
+        @apply absolute inset-1 rounded-full bg-dark-surface;
+    }
+
+    .ai-orb-sm {
+        @apply relative w-8 h-8 rounded-full;
+        background: conic-gradient(from 0deg, #C8FF00, #00FF88, #C8FF00);
+        filter: blur(0.5px);
+        animation: orbSpin 3s linear infinite;
+    }
+
+    .ai-orb-sm::after {
+        content: '';
+        @apply absolute inset-0.5 rounded-full bg-dark-surface;
+    }
+
+    /* AI Badge */
+    .badge-ai {
+        @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium
+               bg-lime/10 text-lime;
+    }
+
+    /* Status Badges */
+    .badge {
+        @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+    }
+
+    .badge-success {
+        @apply badge bg-green-500/10 text-green-400;
+    }
+
+    .badge-warning {
+        @apply badge bg-amber-500/10 text-amber-400;
+    }
+
+    .badge-danger {
+        @apply badge bg-danger/10 text-danger;
+    }
+
+    .badge-info {
+        @apply badge bg-blue-500/10 text-blue-400;
+    }
+
+    .badge-neutral {
+        @apply badge bg-white/10 text-text-secondary;
+    }
+
+    /* Temperature Badges */
+    .badge-cold {
+        @apply badge bg-blue-500/10 text-blue-400;
+    }
+
+    .badge-warm {
+        @apply badge bg-amber-500/10 text-amber-400;
+    }
+
+    .badge-hot {
+        @apply badge bg-red-500/10 text-red-400;
+    }
+
+    /* Kanban Card */
+    .card-kanban {
+        @apply glass-panel-sm p-4 cursor-grab active:cursor-grabbing
+               hover:border-white/15 hover:bg-white/[0.04]
+               transition-all duration-200;
+    }
+
+    .card-kanban.dragging {
+        @apply opacity-50 scale-95 rotate-1;
+    }
+
+    .card-kanban.drag-over {
+        @apply border-lime/30 shadow-lg shadow-lime/10;
+    }
+
+    /* Bento Grid */
+    .bento-grid {
+        @apply grid gap-4;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Streaming Text Effect */
+    .streaming-text::after {
+        content: '|';
+        @apply animate-pulse text-lime ml-0.5;
+    }
+
+    /* Progress Bar */
+    .progress-bar {
+        @apply h-1 bg-white/10 rounded-full overflow-hidden;
+    }
+
+    .progress-bar-fill {
+        @apply h-full bg-lime rounded-full transition-all duration-500 ease-out;
+    }
+
+    /* Form Wizard Step Indicator */
+    .step-indicator {
+        @apply flex items-center justify-center w-8 h-8 rounded-full text-sm font-medium
+               border-2 border-white/10 text-text-secondary
+               transition-all duration-300;
+    }
+
+    .step-indicator.active {
+        @apply border-lime text-lime bg-lime/10;
+    }
+
+    .step-indicator.completed {
+        @apply border-lime bg-lime text-black;
+    }
+
+    /* Tooltip */
+    .tooltip {
+        @apply absolute z-50 px-3 py-1.5 text-xs rounded-lg bg-dark-surface border border-white/10 text-white
+               opacity-0 pointer-events-none transition-opacity duration-200;
+    }
+
+    /* Table */
+    .table-dark {
+        @apply w-full text-left;
+    }
+
+    .table-dark thead {
+        @apply border-b border-white/10;
+    }
+
+    .table-dark th {
+        @apply px-4 py-3 text-xs font-medium text-text-secondary uppercase tracking-wider;
+    }
+
+    .table-dark td {
+        @apply px-4 py-3 text-sm text-text-body border-b border-white/5;
+    }
+
+    .table-dark tbody tr {
+        @apply hover:bg-white/[0.02] transition-colors;
+    }
+}

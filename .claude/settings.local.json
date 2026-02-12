@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy:*)",
+      "Bash(composer install:*)",
+      "Bash(where:*)",
+      "Bash(php -r \"copy\\(''https://getcomposer.org/installer'', ''composer-setup.php''\\);\")",
+      "Bash(php composer-setup.php:*)",
+      "Bash(php -r:*)",
+      "Bash(php composer.phar install:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)"
+    ]
+  }
+}

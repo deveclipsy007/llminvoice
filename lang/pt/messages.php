@@ -7,7 +7,7 @@ return [
     'app_name'        => 'LLMInvoice',
     'dashboard'       => 'Dashboard',
     'welcome'         => 'Bem-vindo',
-    'welcome_back'    => 'Bem-vindo de volta, :name',
+    'welcome_back'    => 'Bem-vindo de volta, {name}',
     'save'            => 'Salvar',
     'cancel'          => 'Cancelar',
     'delete'          => 'Excluir',
@@ -22,7 +22,7 @@ return [
     'no'              => 'Não',
     'loading'         => 'Carregando...',
     'no_results'      => 'Nenhum resultado encontrado.',
-    'showing'         => 'Exibindo :from a :to de :total resultados',
+    'showing'         => 'Exibindo {from} a {to} de {total} resultados',
     'server_error'    => 'Erro interno do servidor. Tente novamente mais tarde.',
     'page_not_found'  => 'Página não encontrada.',
     'forbidden'       => 'Acesso negado.',
@@ -148,7 +148,7 @@ return [
     'proposals_title'       => 'Propostas',
     'proposal_new'          => 'Nova Proposta',
     'proposal_create_ai'    => 'Gerar Proposta com IA',
-    'proposal_version'      => 'Versão :num',
+    'proposal_version'      => 'Versão {num}',
     'proposal_status'       => 'Status da Proposta',
     'proposal_approve'      => 'Aprovar Proposta',
     'proposal_send'         => 'Enviar para Cliente',
@@ -193,7 +193,7 @@ return [
     // Forms
     // =========================================================================
     'form_title'            => 'Formulário de Diagnóstico',
-    'form_step'             => 'Etapa :step de :total',
+    'form_step'             => 'Etapa {step} de {total}',
     'form_next'             => 'Próximo',
     'form_prev'             => 'Anterior',
     'form_submit'           => 'Enviar Respostas',
@@ -223,7 +223,7 @@ return [
     'diag_thank_title'      => 'Diagnóstico Recebido!',
     'diag_thank_msg'        => 'Nosso time de especialistas da Operon está analisando suas respostas com seriedade e governança para projetar a melhor solução. Veja uma prévia da análise da nossa IA:',
     'diag_register_cta'     => 'Criar Conta para Acompanhar',
-    'diag_welcome_title'    => 'Diagnóstico Especializado :: Equipe Operon',
+    'diag_welcome_title'    => '<span id="dynamic-title">Construa</span> o futuro do seu negócio com tecnologia inovadora',
     'diag_welcome_subtitle' => 'Unimos a Inteligência Artificial à expertise de nossos desenvolvedores seniores para analisar seu negócio com seriedade e governança. Nosso time avalia cada detalhe para projetar o motor de software ideal para seus objetivos.',
     'diag_start_btn'        => 'Iniciar Diagnóstico',
     'optional'              => 'opcional',
@@ -235,6 +235,7 @@ return [
     'settings_general'      => 'Configurações Gerais',
     'settings_services'     => 'Catálogo de Serviços',
     'settings_branding'     => 'Identidade Visual',
+    'settings_ai'           => 'Inteligência Artificial',
     'settings_saved'        => 'Configurações salvas com sucesso.',
     'settings_company_name' => 'Nome da Empresa',
     'settings_tagline'      => 'Tagline',
@@ -246,6 +247,48 @@ return [
     'service_duration'      => 'Duração (dias)',
     'service_difficulty'    => 'Complexidade',
     'service_add'           => 'Adicionar Serviço',
+
+    // AI Settings
+    'ai_active_engine'      => 'Motor de IA Ativo',
+    'ai_active_engine_desc' => 'Escolha qual provedor de IA será usado como motor principal para análises e diagnósticos.',
+    'ai_model'              => 'Modelo',
+    'ai_recommended'        => 'Recomendado',
+    'ai_fastest'            => 'Mais Rápido',
+    'ai_smartest'           => 'Mais Inteligente',
+    'ai_advanced'           => 'Configurações Avançadas',
+    'ai_temperature'        => 'Temperatura',
+    'ai_temperature_hint'   => '0 = preciso e determinístico, 1 = criativo e variado',
+    'ai_max_tokens'         => 'Máx. Tokens',
+    'ai_fallback'           => 'Fallback Automático',
+    'ai_fallback_desc'      => 'Se o provedor principal falhar, tentar automaticamente os outros.',
+    'ai_test_connection'    => 'Testar Conexão',
+    'ai_testing'            => 'Testando conexão com a IA...',
+    'ai_primary_provider'   => 'Provedor de IA Principal',
+    
+    // Página Simples (Fallback)
+    'diag_thank_you_title'  => 'Diagnóstico Recebido!',
+    'diag_thank_you_text'   => 'Recebemos suas informações com sucesso. Nossa inteligência artificial está processando seu diagnóstico e, em breve, você receberá o Blueprint Executivo completo no seu e-mail.',
+    'back_home'             => 'Voltar ao Início',
+
+    // Blueprint Executivo
+    'blueprint_title'          => 'Blueprint Executivo',
+    'blueprint_default_title'  => 'Projeto Personalizado',
+    'blueprint_for'            => 'Preparado especialmente para {name}',
+    'blueprint_diagnosis'      => 'Diagnóstico',
+    'blueprint_phases'         => 'Fases do Projeto',
+    'blueprint_recommendations'=> 'Recomendações Estratégicas',
+    'blueprint_risks'          => 'Riscos Identificados',
+    'blueprint_execution'      => 'Plano de Execução',
+    'blueprint_confidence'     => 'Confiança da Análise',
+    'blueprint_cta_schedule'       => 'Agendar Reunião Estratégica',
+    'blueprint_check_email'        => 'Confira seu e-mail para uma cópia completa deste blueprint',
+    'blueprint_suggested_services' => 'Serviços Recomendados',
+    'download_pdf'                 => 'Baixar PDF',
+    'protocol_title'               => 'Blueprint Executivo',
+    'protocol_not_found'           => 'Protocolo não encontrado ou expirado.',
+    'protocol_processing'          => 'Análise em Processamento',
+    'protocol_processing_text'     => 'Nosso sistema de IA ainda está analisando seus dados. Tente novamente em alguns minutos.',
+    'rate_limit_exceeded'          => 'Muitas submissões recentes. Por favor, aguarde alguns minutos antes de tentar novamente.',
 
     // =========================================================================
     // Public Forms Admin
@@ -292,5 +335,5 @@ return [
     // Misc
     // =========================================================================
     'powered_by'          => 'Powered by LLMInvoice',
-    'copyright'           => '© :year LLMInvoice. Todos os direitos reservados.',
+    'copyright'           => '© {year} LLMInvoice. Todos os direitos reservados.',
 ];

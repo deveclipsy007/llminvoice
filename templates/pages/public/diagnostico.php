@@ -72,6 +72,10 @@ $encouragingMessages = $messages[$locale] ?? $messages['pt'];
         <form id="diag-wizard-form" method="POST" action="/diagnostico" class="space-y-8">
             <?= csrf_field() ?>
             <input type="hidden" name="template_id" value="<?= $template['id'] ?>">
+            <!-- Honeypot anti-spam (hidden from real users) -->
+            <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+                <input type="text" name="website_url" value="" tabindex="-1" autocomplete="off">
+            </div>
 
             <!-- Landing Step -->
             <div class="wizard-step transition-all duration-500" data-step="-1">
@@ -229,3 +233,40 @@ $encouragingMessages = $messages[$locale] ?? $messages['pt'];
 </section>
 
 <script src="/js/diagnostico.js"></script>
+
+<script>
+// Palavras dinâmicas para o título (baseado no idioma)
+const locale = '<?= App::locale() ?>';
+const wordsByLocale = {
+    'pt': ['Construa', 'Inove', 'Escale', 'Otimize', 'Automatize', 'Transforme'],
+    'en': ['Build', 'Innovate', 'Scale', 'Optimize', 'Automate', 'Transform'],
+    'es': ['Construye', 'Innova', 'Escala', 'Optimiza', 'Automatiza', 'Transforma']
+};
+
+const words = wordsByLocale[locale] || wordsByLocale['pt'];
+let currentIndex = 0;
+const titleElement = document.getElementById('dynamic-title');
+
+if (titleElement) {
+    setInterval(() => {
+        // Fade out
+        titleElement.style.opacity = '0';
+        titleElement.style.transform = 'translateY(-10px)';
+        
+        setTimeout(() => {
+            // Change word
+            currentIndex = (currentIndex + 1) % words.length;
+            titleElement.textContent = words[currentIndex];
+            
+            // Fade in
+            titleElement.style.opacity = '1';
+            titleElement.style.transform = 'translateY(0)';
+        }, 300);
+    }, 3000);
+    
+    // Add transition styles
+    titleElement.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    titleElement.style.display = 'inline-block';
+    titleElement.style.color = '#C8FF00'; // nova cor
+}
+</script>

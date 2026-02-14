@@ -93,7 +93,7 @@ $encouragingMessages = $messages[$locale] ?? $messages['pt'];
                     <div class="space-y-6 max-w-3xl glass-panel p-10 rounded-3xl border-white/5 relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-lime/50 to-transparent"></div>
                         
-                        <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
+                        <h1 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4 whitespace-nowrap">
                             <?= __('diag_welcome_title') ?>
                         </h1>
                         <p class="text-lg text-text-secondary leading-relaxed">
@@ -238,9 +238,9 @@ $encouragingMessages = $messages[$locale] ?? $messages['pt'];
 // Palavras dinâmicas para o título (baseado no idioma)
 const locale = '<?= App::locale() ?>';
 const wordsByLocale = {
-    'pt': ['Construa', 'Inove', 'Escale', 'Otimize', 'Automatize', 'Transforme'],
-    'en': ['Build', 'Innovate', 'Scale', 'Optimize', 'Automate', 'Transform'],
-    'es': ['Construye', 'Innova', 'Escala', 'Optimiza', 'Automatiza', 'Transforma']
+    'pt': ['Desbloqueie', 'Escale', 'Transforme', 'Otimize', 'Inove', 'Potencialize'],
+    'en': ['Unlock', 'Scale', 'Transform', 'Optimize', 'Innovate', 'Amplify'],
+    'es': ['Desbloquea', 'Escala', 'Transforma', 'Optimiza', 'Innova', 'Potencia']
 };
 
 const words = wordsByLocale[locale] || wordsByLocale['pt'];

@@ -222,7 +222,7 @@ return [
     'diag_thank_title'      => '¡Diagnóstico Recibido!',
     'diag_thank_msg'        => 'Nuestro equipo de especialistas de Operon está analizando sus respuestas con seriedad y gobernanza para diseñar la mejor solución. Vea una vista previa del análisis realizado por nuestra IA:',
     'diag_register_cta'     => 'Crear Cuenta para Seguimiento',
-    'diag_welcome_title'    => '<span id="dynamic-title">Construye</span> el futuro de tu negocio con tecnología innovadora',
+    'diag_welcome_title'    => '<span id="dynamic-title">Desbloquea</span> el potencial ilimitado de tu negocio',
     'diag_welcome_subtitle' => 'Combinamos la Inteligencia Artificial con la experiencia de nuestros desarrolladores senior para analizar su negocio con seriedad y gobernanza. Nuestro equipo evalúa cada detalle para diseñar el motor de software ideal para sus objetivos.',
     'diag_start_btn'        => 'Iniciar Diagnóstico',
     'optional'              => 'opcional',

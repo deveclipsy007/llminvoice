@@ -222,7 +222,7 @@ return [
     'diag_thank_title'      => 'Diagnostic Received!',
     'diag_thank_msg'        => 'Our Operon specialist team is analyzing your answers with seriousness and governance to design the best solution. See a preview of the analysis made by our AI:',
     'diag_register_cta'     => 'Create Account to Follow Up',
-    'diag_welcome_title'    => '<span id="dynamic-title">Build</span> the future of your business with innovative technology',
+    'diag_welcome_title'    => '<span id="dynamic-title">Unlock</span> the unlimited potential of your business',
     'diag_welcome_subtitle' => 'We combine Artificial Intelligence with the expertise of our senior developers to analyze your business with seriousness and governance. Our team evaluates every detail to design the ideal software engine for your goals.',
     'diag_start_btn'        => 'Start Diagnostic',
     'optional'              => 'optional',
